@@ -10,7 +10,8 @@ namespace Latvija
     {
         static void Main(string[] args)
         {
-            string[] eilutes = System.IO.File.ReadAllLines(@"C:\Users\Andrius\Documents\txt_failai\Latvija.txt");
+            string[] eilutes = 
+                System.IO.File.ReadAllLines(@"C:\Users\Andrius\Documents\Visual Studio 2017\olimpiada\Latvija\Latvija\duomenys.txt");
             string pirmaeilute = eilutes[0];
             string[] pirmaduomenys = pirmaeilute.Split(' ');
             // ax - desines sienos x koordinate (L)
@@ -79,7 +80,7 @@ namespace Latvija
                 ay++;
             }
             using (System.IO.StreamWriter file =
-            new System.IO.StreamWriter(@"C:\Users\Andrius\Documents\txt_failai\Latvijarez.txt"))
+            new System.IO.StreamWriter(@"C:\Users\Andrius\Documents\Visual Studio 2017\olimpiada\Latvija\Latvija\rezultatai.txt"))
             {
                 file.WriteLine(GalimaNumustiDaugiausiai);
             }
